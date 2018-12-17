@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# VERSION 1.2.4
+# VERSION 1.2.6
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    zeiot/rpi-coredns
 
-FROM resin/aarch64-debian:stretch
+FROM balenalib/aarch64-debian:stretch
 
 LABEL summary="CoreDNS for ARM" \
       description="CoreDNS for ARM devices" \
@@ -24,7 +24,7 @@ LABEL summary="CoreDNS for ARM" \
       url="https://github.com/zeiot/rpi-coredns" \
       maintainer="Nicolas Lamirault <nicolas.lamirault@gmail.com>"
 
-ENV COREDNS_VERSION 1.2.4
+ENV COREDNS_VERSION 1.2.6
 
 RUN [ "cross-build-start" ]
 
@@ -36,14 +36,14 @@ RUN tar -zxvf /coredns.tgz \
 
 ADD ./Corefile /etc/coredns/Corefile
 
-FROM resin/aarch64-debian:stretch
-
-EXPOSE  9053
-EXPOSE  8080
+RUN [ "cross-build-end" ]
 
 USER    nobody
 
 VOLUME  ["/etc/coredns", "/var/log/coredns/" ]
+
+EXPOSE  9053
+EXPOSE  8080
 
 ENTRYPOINT ["/usr/bin/coredns"]
 
