@@ -1,4 +1,4 @@
-# Copyright 2017-2018 Nicolas Lamirault <nicolas.lamirault@gmail.com>
+# Copyright 2017-2019 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,20 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# VERSION 1.3.0
+# VERSION 1.3.1
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
-# DESCRIPTION:    zeiot/rpi-coredns
+# DESCRIPTION:    zeiot/coredns
 
+FROM balenalib/aarch64-alpine:3.9
 # FROM balenalib/aarch64-debian:stretch
-FROM resin/aarch64-debian:stretch
+# FROM resin/aarch64-debian:stretch
 
 LABEL summary="CoreDNS for ARM" \
       description="CoreDNS for ARM devices" \
-      name="zeiot/rpi-coredns" \
-      url="https://github.com/zeiot/rpi-coredns" \
+      name="zeiot/coredns" \
+      url="https://github.com/zeiot/coredns" \
       maintainer="Nicolas Lamirault <nicolas.lamirault@gmail.com>"
 
-ENV COREDNS_VERSION 1.3.0
+ENV COREDNS_VERSION 1.3.1
 
 RUN [ "cross-build-start" ]
 

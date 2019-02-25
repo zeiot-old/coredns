@@ -1,5 +1,10 @@
-RPI CoreDNS ChangeLog
+ARM CoreDNS ChangeLog
 =================================
+
+# Version 1.3.0 (02/25/2019)
+
+- Migrate to Balenalib Alpine as Docker image
+- Use release 1.3.1
 
 # Version 1.2.0 (12/17/2018)
 

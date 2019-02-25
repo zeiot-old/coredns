@@ -1,8 +1,8 @@
 # RPI CoreDNS
 
-* Master: [![pipeline status](https://gitlab.com/zeiot/rpi-coredns/badges/master/pipeline.svg)](https://gitlab.com/zeiot/rpi-coredns/commits/master)
+* Master: [![pipeline status](https://gitlab.com/zeiot/coredns/badges/master/pipeline.svg)](https://gitlab.com/zeiot/coredns/commits/master)
 
-Docker image of [CoreDNS][] to use on a [Raspberry PI][].
+Docker image of [CoreDNS][] to use on a ARM devices.
 
 Exposes Ports :
 
@@ -41,7 +41,7 @@ There is a sample configuration file (*Corefile*) which forwards all queries to 
 
 # Supported tags
 
-* [![](https://images.microbadger.com/badges/version/zeiot/rpi-coredns.svg)](http://microbadger.com/images/zeiot/rpi-coredns "Get your own version badge on microbadger.com")
+* [![](https://images.microbadger.com/badges/version/zeiot/coredns.svg)](http://microbadger.com/images/zeiot/coredns "Get your own version badge on microbadger.com")
 
 
 ## License
@@ -59,6 +59,5 @@ A [ChangeLog.md](ChangeLog.md) is available.
 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
-[Raspberry PI]: https://www.raspberrypi.org/
 [CoreDNS]: https://coredns.io/
 [Prometheus]: https://prometheus.io/
