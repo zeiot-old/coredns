@@ -1,6 +1,10 @@
 ARM CoreDNS ChangeLog
 =================================
 
+# Version 1.4.0 (03/17/2019)
+
+- Use release 1.4.0
+
 # Version 1.3.0 (02/25/2019)
 
 - Migrate to Balenalib Alpine as Docker image
