@@ -19,7 +19,7 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay2
-  APP_VERSION: "1.3"
+  APP_VERSION: "1.4"
 
 stages:
   - development
